@@ -396,19 +396,30 @@
                 <div class="col-lg-6">
                     <form>
                         <label for="email" class="form-label">Email Address:</label>
-                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                        <div class="input-group mb-1">
+                            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                            <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                        </div>
 
                         <label for="text" class="form-label mt-2">Name:</label>
-                        <input type="text" class="form-control" id="text" placeholder="John Doe">
+                        <div class="input-group mb-1">
+                            <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+                            <input type="text" class="form-control" id="text" placeholder="John Doe">
+                        </div>
 
                         <label for="subject" class="form-label mt-2">What Service Are You Looking From Us?
                         </label>
-                        <select name="subject" id="subject" class="form-select">
-                            <option value="Full-Stack" selected>Full Stack Development</option>
-                            <option value="Machine-Learning">Machine Learninhg</option>
-                            <option value="Blockchain">Blockchain</option>
-                            <option value="User-exp">User Experience</option>
-                        </select>
+                        <div class="input-group mb-1">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select name="subject" id="subject" class="form-select">
+                                <option value="Full-Stack" selected>Full Stack Development</option>
+                                <option value="Machine-Learning">Machine Learninhg</option>
+                                <option value="Blockchain">Blockchain</option>
+                                <option value="User-exp">User Experience</option>
+                            </select>
+                        </div>
 
                         <label for="message" class="form-label mt-2">Your Message:</label>
                         <textarea name="message" id="message" style="height: 150px;" class="form-control"> </textarea>
