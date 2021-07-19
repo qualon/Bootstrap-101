@@ -401,9 +401,21 @@
                         <label for="text" class="form-label mt-2">Name:</label>
                         <input type="text" class="form-control" id="text" placeholder="John Doe">
 
-                        <label for="email" class="form-label mt-2">What Service Are You Looking From Us?
+                        <label for="subject" class="form-label mt-2">What Service Are You Looking From Us?
                         </label>
-                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                        <select name="subject" id="subject" class="form-select">
+                            <option value="Full-Stack" selected>Full Stack Development</option>
+                            <option value="Machine-Learning">Machine Learninhg</option>
+                            <option value="Blockchain">Blockchain</option>
+                            <option value="User-exp">User Experience</option>
+                        </select>
+
+                        <label for="message" class="form-label mt-2">Your Message:</label>
+                        <textarea name="message" id="message" style="height: 150px;" class="form-control"> </textarea>
+
+                        <div class="my-4 text-center">
+                            <button type="submit" class="btn btn-secondary px-4">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
