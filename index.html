@@ -95,7 +95,9 @@
                 </div>
                 <!-- Image -->
                 <div class="col-md-5 text-center">
-                    <img class="img-fluid" src="images/undraw_Push_notifications_re_t84m.svg" alt="">
+                    <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Creative Technologies">
+                        <img class="img-fluid" src="images/undraw_Push_notifications_re_t84m.svg" alt="">
+                    </span>
                 </div>
             </div>
         </div>
@@ -410,12 +412,24 @@
                         <div class="input-group mb-1">
                             <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
                             <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                            <span class="input-group-text">
+                                <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Enter Your Email Address">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
                         </div>
 
                         <label for="text" class="form-label mt-2">Name:</label>
                         <div class="input-group mb-1">
                             <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
                             <input type="text" class="form-control" id="text" placeholder="John Doe">
+                            <span class="input-group-text">
+                                <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Enter your first and last name">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
                         </div>
 
                         <label for="subject" class="form-label mt-2">What Service Are You Looking From Us?
@@ -612,10 +626,15 @@
         </div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 
 </html>
